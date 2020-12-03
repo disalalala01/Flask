@@ -14,7 +14,7 @@
 {% block content %}
 {% for post in pages.items %}
 <p>
-  <a href="{{url_for('posts.post_detail', slug=post.slug)}}">{{ post.title }}</a>
+  <a href="{{ url_for('posts.post_detail', slug=post.slug) }}">{{ post.title }}</a>
 </p>
 {% endfor %}
 
@@ -25,7 +25,7 @@
 
     </li>
     {% for page in pages.iter_pages() %}
-        <li {% if page == pages.page %} class="active" {% endif %}><a href="./?page={{ page }}">{{ page }} <span class="sr-only">(current)</span></a></li>
+        <li {% if page == pages.page %} class="active" {% endif %}> <a href="./?page={{ page }}">{{ page }} <span class="sr-only">(current)</span></a></li>
 
     {% endfor %}
 
