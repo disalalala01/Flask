@@ -1,6 +1,6 @@
 
 from app import db #импорт склалкхими
-from datetime import datetime #для таблицы керек нарсе ол
+from datetime import datetime #для таблицы керек нарсе ол | ОЛ для таблицы болганда уакыт санауга керек нарсе
 import re #чтобы норм слаги делать параметры ставим какие слаги можно какие нельзя
 
 from flask_security import UserMixin, RoleMixin
